@@ -1,0 +1,28 @@
+name: skylist
+description: SkyList modern Android music player built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  on_audio_query: ^2.9.0
+  just_audio: ^0.9.39
+  audio_service: ^0.18.14
+  audio_session: ^0.1.18
+  just_audio_background: ^0.0.1-beta.13
+  shared_preferences: ^2.2.3
+  uuid: ^4.4.0
+  collection: ^1.18.0
+
+flutter:
+  uses-material-design: true
+
+
+dev_dependencies:
+  flutter_lints: ^3.0.2
