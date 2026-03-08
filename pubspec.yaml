@@ -15,7 +15,7 @@ dependencies:
   just_audio: ^0.9.39
   audio_service: ^0.18.14
   audio_session: ^0.1.18
-  just_audio_background: ^0.0.1-beta.13
+  just_audio_background: ^0.0.1-beta.17
   shared_preferences: ^2.2.3
   uuid: ^4.4.0
   collection: ^1.18.0
