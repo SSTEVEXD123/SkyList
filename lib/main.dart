@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 import 'package:provider/provider.dart';
@@ -11,11 +12,13 @@ import 'package:skylist/utils/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await JustAudioBackground.init(
-    androidNotificationChannelId: 'com.skylist.app.playback',
-    androidNotificationChannelName: 'SkyList Playback',
-    androidNotificationOngoing: true,
-  );
+  if (!kIsWeb) {
+    await JustAudioBackground.init(
+      androidNotificationChannelId: 'com.skylist.app.playback',
+      androidNotificationChannelName: 'SkyList Playback',
+      androidNotificationOngoing: true,
+    );
+  }
 
   final settingsController = AppSettingsController();
   await settingsController.load();

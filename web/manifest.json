@@ -1,0 +1,10 @@
+{
+  "name": "SkyList",
+  "short_name": "SkyList",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "description": "SkyList modern music player built with Flutter.",
+  "orientation": "portrait-primary"
+}
